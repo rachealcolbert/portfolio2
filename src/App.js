@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./components/Nav/index";
 import About from "./components/About/index";
+import Contact from "./components/Contact/index";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header>
         <Nav></Nav>
         <About></About>
+        <Contact></Contact>
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
