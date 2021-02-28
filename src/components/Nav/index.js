@@ -5,7 +5,7 @@ function Nav() {
     <section>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand font-weight-bold" href="/">
             racheal colbert
           </a>
           <button
