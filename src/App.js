@@ -1,9 +1,11 @@
 import "./App.css";
+import Nav from "./components/Nav/index";
 
 function App() {
   return (
     <div>
       <header>
+        <Nav></Nav>
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
