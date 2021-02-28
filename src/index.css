@@ -38,3 +38,12 @@ nav .navbar-nav a {
   margin-left: 23rem;
   margin-top: 5rem;
 }
+
+#contact-form {
+  margin-left: 5rem;
+  margin-right: 15rem;
+}
+
+.form-name {
+  margin-left: 5.5rem;
+}

@@ -39,30 +39,39 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+      <h1 className="form-name" data-testid="h1tag">
+        Contact me
+      </h1>
+      <form className="row g-3" id="contact-form" onSubmit={handleSubmit}>
+        <div className="col-md-6">
+          <label className="form-label" htmlFor="name">
+            Name:
+          </label>
           <input
             type="text"
+            className="form-control"
             name="name"
             defaultValue={name}
             onBlur={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className="col-md-6">
+          <label className="form-label" htmlFor="email">
+            Email address:
+          </label>
           <input
             type="email"
+            className="form-control"
             name="email"
             defaultValue={email}
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className="col-12">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
+            className="form-control"
             rows="5"
             defaultValue={message}
             onBlur={handleChange}
@@ -73,9 +82,11 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">
-          Submit
-        </button>
+        <div className="col-12">
+          <button className="btn btn-dark" data-testid="button" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   );
