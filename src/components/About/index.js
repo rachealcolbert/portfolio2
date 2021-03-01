@@ -7,7 +7,7 @@ function About() {
       {/* <img src={profileImage} alt="developer pic" /> */}
       {/* <div style="background:transparent url('assets/profile.png) no re-peat" */}
       <div className="card border-light mb-3">
-        <div className="card-body">
+        <div id="about" className="card-body">
           <h1 className="card-title">hello.</h1>
           <p className="card-text">
             Accomplished digital content professional with 5+ years of

@@ -1,22 +1,24 @@
 import React, { useState } from "react";
-import "./App.css";
 import Nav from "./components/Nav/index";
 import About from "./components/About/index";
 import Contact from "./components/Contact/index";
-import Portfolio from "./components/Portfolio/index";
+// import Gallery from "./components/Gallery/index";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [categories] = useState([
     {
-      name: "About",
+      name: "about",
     },
-    { name: "Portfolio" },
+    { name: "portfolio" },
     { name: "resume" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
+
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
 
   return (
     <div>
@@ -27,15 +29,24 @@ function App() {
           currentCategory={currentCategory}
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
+          portfolioSelected={portfolioSelected}
+          setPortfolioSelected={setPortfolioSelected}
         ></Nav>
         <main>
           {!contactSelected ? (
             <>
               <About></About>
-              <Portfolio></Portfolio>
             </>
           ) : (
             <Contact></Contact>
+          )}
+          ;
+          {!portfolioSelected ? (
+            <>
+              <Portfolio></Portfolio>
+            </>
+          ) : (
+            <></>
           )}
         </main>
         <div></div>
