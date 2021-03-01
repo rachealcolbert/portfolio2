@@ -31,13 +31,16 @@ nav .navbar-nav a {
 
 .background-about {
   margin: 2em;
-}
-
-.card {
   width: 40rem;
   margin-left: 23rem;
   margin-top: 5rem;
 }
+
+/* .card {
+  width: 40rem;
+  margin-left: 23rem;
+  margin-top: 5rem;
+} */
 
 #contact-form {
   margin-left: 5rem;
@@ -46,4 +49,8 @@ nav .navbar-nav a {
 
 .form-name {
   margin-left: 5.5rem;
+}
+.portfolio-cards {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
