@@ -40,7 +40,7 @@ function App() {
           crossOrigin="anonymous"
         />
       </header>
-      <footer className="navbar navbar-light bg-light">
+      <footer className="navbar fixed-bottom navbar-light bg-light">
         <div className="container-fluid">
           <a
             className="navbar-brand"

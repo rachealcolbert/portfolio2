@@ -45,12 +45,12 @@ nav .navbar-nav a {
 } */
 
 #contact-form {
-  margin-left: 25rem;
-  margin-right: 15rem;
+  margin-left: 40rem;
+  margin-right: 10rem;
 }
 
 .form-name {
-  margin-left: 5.5rem;
+  margin-left: 40rem;
 }
 .portfolio-cards {
   margin-left: 10rem;
@@ -67,4 +67,8 @@ nav .navbar-nav a {
   margin-left: 5rem;
   font-weight: 600;
   font-size: 45px;
+}
+
+.portfolio {
+  margin-bottom: 20rem;
 }
