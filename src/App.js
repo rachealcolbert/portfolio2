@@ -4,6 +4,7 @@ import About from "./components/About/index";
 // import Contact from "./components/Contact/index";
 // import Gallery from "./components/Gallery/index";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 function App() {
   const [categories] = useState([
@@ -12,6 +13,7 @@ function App() {
     },
     { name: "portfolio" },
     { name: "resume" },
+    { name: "contact" },
   ]);
 
   const [selected, setSelected] = useState(categories[0]);
@@ -32,6 +34,7 @@ function App() {
           {selected === "about" ? <About /> : null}
           {selected === "portfolio" ? <Portfolio /> : null}
           {/* {selected === "resume" ? <Resume /> : null} */}
+          {selected === "contact" ? <Contact /> : null}
         </main>
         <div></div>
         <link
