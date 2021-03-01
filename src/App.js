@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav/index";
 import About from "./components/About/index";
-import Contact from "./components/Contact/index";
+// import Contact from "./components/Contact/index";
 // import Gallery from "./components/Gallery/index";
 import Portfolio from "./components/Portfolio";
 
@@ -14,40 +14,24 @@ function App() {
     { name: "resume" },
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [selected, setSelected] = useState(categories[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
-
-  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const setSelected = (category) => {
+    setSelected(category);
+  };
 
   return (
     <div>
       <header>
         <Nav
           categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-          portfolioSelected={portfolioSelected}
-          setPortfolioSelected={setPortfolioSelected}
+          selected={selected}
+          setSelected={setSelected}
         ></Nav>
         <main>
-          {!contactSelected ? (
-            <>
-              <About></About>
-            </>
-          ) : (
-            <Contact></Contact>
-          )}
-          ;
-          {!portfolioSelected ? (
-            <>
-              <Portfolio></Portfolio>
-            </>
-          ) : (
-            <></>
-          )}
+          {selected === "about" ? <About /> : null}
+          {selected === "portfolio" ? <Portfolio /> : null}
+          {/* {selected === "resume" ? <Resume /> : null} */}
         </main>
         <div></div>
         <link

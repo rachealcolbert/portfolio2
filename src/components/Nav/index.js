@@ -4,7 +4,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Nav(props) {
   const {
     categories = [],
-    setCurrentCategory,
+    setSelected,
     contactSelected,
     currentCategory,
     setContactSelected,
@@ -48,8 +48,7 @@ function Nav(props) {
                 >
                   <span
                     onClick={() => {
-                      setCurrentCategory(category);
-                      setContactSelected(false);
+                      setSelected(category.name); //setSelected to string
                     }}
                   >
                     {capitalizeFirstLetter(category.name)}
