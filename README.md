@@ -6,7 +6,7 @@ A React portfolio of my work.
 
 **Link to Deployed Site:** https://github.com/rachealcolbert/portfolio2
 
-**Screenshot of Application:** https://rachealcolbert.github.io/portfolio2/
+**Screenshot of Application:**
 
 ![Image of Application](src/assets/portfolio.png)
 
