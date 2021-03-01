@@ -1,42 +1,38 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav/index";
 import About from "./components/About/index";
-// import Contact from "./components/Contact/index";
-// import Gallery from "./components/Gallery/index";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/index";
+// import Gallery from "./components/Gallery/index";
 
 function App() {
-  const [categories] = useState([
-    {
-      name: "about",
-    },
-    { name: "portfolio" },
-    { name: "resume" },
-    { name: "contact" },
-  ]);
+  const [categories] = useState([{ name: "portfolio" }, { name: "resume" }]);
 
-  const [selected, setSelected] = useState(categories[0]);
-
-  const setSelected = (category) => {
-    setSelected(category);
-  };
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
       <header>
         <Nav
           categories={categories}
-          selected={selected}
-          setSelected={setSelected}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
         ></Nav>
         <main>
-          {selected === "about" ? <About /> : null}
-          {selected === "portfolio" ? <Portfolio /> : null}
-          {/* {selected === "resume" ? <Resume /> : null} */}
-          {selected === "contact" ? <Contact /> : null}
+          {!contactSelected ? (
+            <>
+              <About></About>
+              <Portfolio></Portfolio>
+            </>
+          ) : (
+            <Contact></Contact>
+          )}
+          <div></div>
         </main>
-        <div></div>
+
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"

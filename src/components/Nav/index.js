@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+// import Portfolio from "../Portfolio";
 
 function Nav(props) {
   const {
     categories = [],
-    setSelected,
-    contactSelected,
+    setCurrentCategory,
     currentCategory,
+    contactSelected,
     setContactSelected,
   } = props;
 
@@ -34,7 +35,17 @@ function Nav(props) {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className={`mx-2 ${contactSelected && "navActive"}`}>
+              <li>
+                <a
+                  data-testid="about"
+                  href="#about"
+                  onClick={() => setContactSelected(false)}
+                >
+                  {" "}
+                  About{" "}
+                </a>
+              </li>
+              <li>
                 <span onClick={() => setContactSelected(true)}>Contact</span>
               </li>
               {categories.map((category) => (
@@ -48,7 +59,8 @@ function Nav(props) {
                 >
                   <span
                     onClick={() => {
-                      setSelected(category.name); //setSelected to string
+                      setCurrentCategory(category);
+                      setContactSelected(false);
                     }}
                   >
                     {capitalizeFirstLetter(category.name)}

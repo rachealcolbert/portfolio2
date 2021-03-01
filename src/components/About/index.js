@@ -10,18 +10,12 @@ function About() {
         <div id="about" className="card-body">
           <h1 className="card-title">hello.</h1>
           <p className="card-text">
-            Accomplished digital content professional with 5+ years of
-            experience developing engaging content for print and digital
-            channels. Skilled in writing and editing for blogs, newsletters, and
-            social media. Successful in website design, video production, and
-            virtual broadcasting. Strong leader with the ability to oversee
-            projects and ensure delivery within deadlines and budgets.
-            Proficient in many industry technologies including WordPress, Final
-            Cut Pro, Google Analytics, and Wirecast.
+            My name's Racheal and I'm an accomplished digital content
+            professional with 5+ years of experience developing engaging content
+            for print and digital channels. I am skilled in full-stack web
+            devloper with experience in React, JavaScript, JQuery, Node.js, CSS,
+            and HTML.
           </p>
-          <a href="/" className="btn btn-dark btn-small">
-            see my work
-          </a>
         </div>
       </div>
     </section>
