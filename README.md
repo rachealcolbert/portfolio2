@@ -4,7 +4,7 @@ A React portfolio of my work.
 
 **Link to GitHub Repo:** https://github.com/rachealcolbert/portfolio2
 
-**Link to Deployed Site:** https://github.com/rachealcolbert/portfolio2
+**Link to Deployed Site:** https://rachealcolbert.github.io/portfolio2/ 
 
 **Screenshot of Application:**
 
