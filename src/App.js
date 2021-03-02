@@ -6,30 +6,18 @@ import Contact from "./components/Contact/index";
 // import Gallery from "./components/Gallery/index";
 
 function App() {
-  const [categories] = useState([{ name: "portfolio" }, { name: "resume" }]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+  const [page, setPage] = useState("About");
 
   return (
     <div>
       <header>
-        <Nav
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-        ></Nav>
+        <Nav page={page} setPage={setPage}></Nav>
         <main>
-          {!contactSelected ? (
-            <>
-              <About></About>
-              <Portfolio></Portfolio>
-            </>
-          ) : (
-            <Contact></Contact>
-          )}
+          {page === "About" && <About />}
+          {page === "Contact" && <Contact />}
+          {page === "Portfolio" && <Portfolio />}
+          {/* {page === "Resume" && <Resume />} */}
+
           <div></div>
         </main>
 

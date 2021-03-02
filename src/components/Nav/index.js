@@ -1,19 +1,11 @@
 import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 // import Portfolio from "../Portfolio";
 
-function Nav(props) {
-  const {
-    // categories = [],
-    // setCurrentCategory,
-    currentCategory,
-    // contactSelected,
-    setContactSelected,
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+function Nav({ page, setPage }) {
+  //   useEffect(() => {
+  //     document.title = capitalizeFirstLetter(currentCategory.name);
+  //   }, [currentCategory]);
 
   return (
     <section>
@@ -39,7 +31,7 @@ function Nav(props) {
                 <a
                   data-testid="about"
                   href="#about"
-                  onClick={() => setContactSelected(false)}
+                  onClick={() => setPage("About")}
                 >
                   {" "}
                   About{" "}
@@ -49,7 +41,7 @@ function Nav(props) {
                 <a
                   data-testid="contact"
                   href="#contact"
-                  onClick={() => setContactSelected(true)}
+                  onClick={() => setPage("Contact")}
                 >
                   {" "}
                   Contact{" "}
@@ -59,7 +51,7 @@ function Nav(props) {
                 <a
                   data-testid="portfolio"
                   href="#portfolio"
-                  onClick={() => setContactSelected(false)}
+                  onClick={() => setPage("Portfolio")}
                 >
                   {" "}
                   Portfolio{" "}
@@ -69,7 +61,7 @@ function Nav(props) {
                 <a
                   data-testid="resume"
                   href="#resume"
-                  onClick={() => setContactSelected(false)}
+                  onClick={() => setPage("Resume")}
                 >
                   {" "}
                   Resume{" "}
