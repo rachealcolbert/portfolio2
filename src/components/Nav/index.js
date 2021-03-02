@@ -4,10 +4,10 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const {
-    categories = [],
-    setCurrentCategory,
+    // categories = [],
+    // setCurrentCategory,
     currentCategory,
-    contactSelected,
+    // contactSelected,
     setContactSelected,
   } = props;
 
@@ -46,27 +46,35 @@ function Nav(props) {
                 </a>
               </li>
               <li>
-                <span onClick={() => setContactSelected(true)}>Contact</span>
-              </li>
-              {categories.map((category) => (
-                <li
-                  className={`mx-1 ${
-                    currentCategory.name === category.name &&
-                    !contactSelected &&
-                    "navActive"
-                  }`}
-                  key={category.name}
+                <a
+                  data-testid="contact"
+                  href="#contact"
+                  onClick={() => setContactSelected(true)}
                 >
-                  <span
-                    onClick={() => {
-                      setCurrentCategory(category);
-                      setContactSelected(false);
-                    }}
-                  >
-                    {capitalizeFirstLetter(category.name)}
-                  </span>
-                </li>
-              ))}
+                  {" "}
+                  Contact{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  data-testid="portfolio"
+                  href="#portfolio"
+                  onClick={() => setContactSelected(false)}
+                >
+                  {" "}
+                  Portfolio{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  data-testid="resume"
+                  href="#resume"
+                  onClick={() => setContactSelected(false)}
+                >
+                  {" "}
+                  Resume{" "}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
