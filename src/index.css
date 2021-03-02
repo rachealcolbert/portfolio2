@@ -5,11 +5,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white !important;
-  background-image: url("https://previews.dropbox.com/p/thumb/ABEyio9FK1txBDOXEPGkwqpESl1eGEEuvy8C4qQWfo9fiKguc6kCt7Wb1onih_ha_6ublCHHvKePjKEye1DE9FVDfqZL8aDMXjPLjN0aEM0mYdV5K0qj_V8HPFe3xLgrz0yg98B5Fk9tI3SpAYJrN7MRXI_s3SSyJc1ecEtkWWlv2SspPmSKbM1IIoZEucBhq6mgMdFngc3bW_eT1faxgF-sheUgY77UNpdPcX6JCanv2z4Zclt7qYnpriLJqJB5nqv6yaSIVPjHNxGiMc17SS0S0M8XxMxp7x4knAe_PP1xFeqaw4Fz-pVq-QZpgsEXGNTRjH5u-1zZ4bngiaA1YBXwyUwYtiJmhDJysqF2-bI4lDmulOtxsGOnb2QLDh6d1Rg/p.png?fv_content=true&size_mode=5"),
-    url("https://previews.dropbox.com/p/thumb/ABGnlicLRIPYV5sUidc6evCRsXWLR1pWNm2mpRMag2ruvdh2V_VXywadJ8ECOjYiT7c1ZnBQD3tej-ypGf6uKJrLe6hpVC-Fds6IGEP2-zX6ynMy1Kz6a3yE473hu-y_xc22QrSpz77oJNgS07Ye3Sw-FH_lM2Dh7uGAinzMpkGzL55A9ymuES11KqTgAniKHs1Whg2bxMb2T5ZQZqO2GUnf-lt3nEvveFo_z5WzgK6C6AfElQoNkvaztZ46VlUbFq2y9ekOuojdfm1TuXBj3_98VwQcRVn4Pz6t8x15wqFpi_kcbk5CYWgywym7rcL8P9BaZlVjJ22oIs74UdtW6FBDyH5K42tKn6zgYp7GBMwBW6yu8usUcLbP6zwFylISEJU/p.png?fv_content=true&size_mode=5");
+  background-image: url("https://previews.dropbox.com/p/thumb/ABEyio9FK1txBDOXEPGkwqpESl1eGEEuvy8C4qQWfo9fiKguc6kCt7Wb1onih_ha_6ublCHHvKePjKEye1DE9FVDfqZL8aDMXjPLjN0aEM0mYdV5K0qj_V8HPFe3xLgrz0yg98B5Fk9tI3SpAYJrN7MRXI_s3SSyJc1ecEtkWWlv2SspPmSKbM1IIoZEucBhq6mgMdFngc3bW_eT1faxgF-sheUgY77UNpdPcX6JCanv2z4Zclt7qYnpriLJqJB5nqv6yaSIVPjHNxGiMc17SS0S0M8XxMxp7x4knAe_PP1xFeqaw4Fz-pVq-QZpgsEXGNTRjH5u-1zZ4bngiaA1YBXwyUwYtiJmhDJysqF2-bI4lDmulOtxsGOnb2QLDh6d1Rg/p.png?fv_content=true&size_mode=5");
   background-repeat: no-repeat;
-  background-position: left top, 90% 8%;
-  background-size: 550px, 450px;
+  background-position: left top;
+  background-size: 550px;
 }
 
 code {
@@ -21,6 +20,10 @@ code {
   background-color: white;
   padding-top: 25px !important;
   padding-bottom: 25px !important;
+}
+
+nav a {
+  margin-right: 0.5rem;
 }
 
 .navbar-brand {
@@ -72,4 +75,10 @@ nav .navbar-nav a {
 
 .portfolio {
   margin-bottom: 20rem;
+}
+
+.computer-image {
+  float: right;
+  width: 250px;
+  height: 300px;
 }
