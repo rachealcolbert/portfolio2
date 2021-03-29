@@ -2,9 +2,9 @@ import React from "react";
 import workoutPlanner from "../../assets/workout-planner.png";
 import techBlog from "../../assets/technews.png";
 import makeDrink from "../../assets/drink.png";
-import noteTaker from "../../assets/notes.png";
 import budgetMaker from "../../assets/budget.png";
 import runBuddy from "../../assets/run.png";
+import movieSearch from "../../assets/movie.png";
 
 function Portfolio() {
   return (
@@ -128,14 +128,14 @@ function Portfolio() {
           </div>
           <div className="col-4">
             <div className="card">
-              <img src={noteTaker} class="card-img-top" alt="notes" />
+              <img src={movieSearch} class="card-img-top" alt="notes" />
               <div className="card-body">
-                <h5 className="card-title">note taker</h5>
+                <h5 className="card-title">movie search</h5>
                 <p className="card-text">
-                  Web app that allows you to take notes, save notes, and edit
-                  them at a later date.
+                  Web app that allows you to search popular movies and save them
+                  to a watch list.
                 </p>
-                <a href="https://github.com/rachealcolbert/note-taker">
+                <a href="https://github.com/rachealcolbert/film-festival">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
